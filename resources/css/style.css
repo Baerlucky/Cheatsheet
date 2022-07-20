@@ -1,0 +1,68 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	width: 100%;
+	background-color: palegreen;
+	font-family: Helvetica, monospace;
+}
+
+.overlay {
+	width: 90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+header {
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: bold;
+	font-family: Roboto Mono, monospace;
+}
+
+#table-1,
+#table-2 {
+	min-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border: 2px solid darkgreen;
+	border-collapse: separate;
+}
+
+#table-2 {
+	margin-bottom: 1%;
+}
+
+span {
+	background-color: white;
+}
+
+td {
+	text-align: center;
+	font-size: 0.85rem;
+	line-height: 1.2;
+	border: 1px solid palegreen;
+	border-collapse: collapse;
+	border-top: 2px solid darkgreen;
+}
+
+h2 {
+	text-align: center;
+	color: olivedrab;
+	
+}
+
+th {
+	background-color: olivedrab;
+}
+
+.footnote {
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}

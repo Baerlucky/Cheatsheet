@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>CSS Selectors & Specificity Cheatsheet</title>
+	<meta charset="utf-8">
+	<link href="./resources/css/reset_normalize.css" type="text/css" rel="Stylesheet">
+	<link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<header>
+		<caption>CSS Selectors & Specificity Table Reference</caption>
+	</header>
+	
+	<section>
+		<h2>CSS Selectors<sup>1</sup></h2>
+	</section>
+	
+	<main>
+		<section class="overlay">
+			<table id="table-1">	
+				<thead>
+					<tr>
+						<th>Selector</th>
+						<th>Meaning</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				
+				<tbody>	
+					<tr>
+						<td>Universal</td>
+						<td>Applies to all elements in the document.</td>
+						<td><span><i>* &nbsp;{}</i></span><br> Targets all elements on the page.</td>
+					</tr>
+					
+					<tr>
+						<td>Type</td>
+						<td>Matches elements names.</td>
+						<td><span><i>&lt;h1&gt;, &lt;h2&gt;, &lt;p&gt; &nbsp;{}</i></span><br> Targets the <i>h1, h2, p</i> elements.</td>
+					</tr>
+				
+					<tr>
+						<td>Class</td>
+						<td>A period precedes the elements class attribute value.</td>
+						<td><span><i>.navBar &nbsp; &lt;li&gt; &nbsp; {}</i></span><br> Targets an element whose class attribute has a value of navBar.</td>
+					</tr>
+				
+					<tr>
+						<td>ID</td>
+						<td>Pound symbol precedes theelements id attribute value.</td>
+						<td><span><i>#introduction &nbsp;{}</i></span><br> Targets an element whose <i>id</i> attribute has a value of introduction.</td>
+					</tr>
+				
+					<tr>
+						<td>Child</td>
+						<td>Matches an element that is a direct child of another.</td>
+						<td><span><i>&lt;li&gt;>&lt;a&gt; &nbsp;{}</i></span><br> Targets any <i>&lt;a&gt;</i> elements that are children of the <i>&lt;li&gt;</i> element<br> (but not other <i>&lt;a&gt;</i> elements in the page).</td></td>
+					</tr>
+				
+					<tr>
+						<td>Desendent</td>
+						<td>Matches an element that is a desendent of another<br>specified element.</td>
+						<td><span><i>&lt;p&gt; &nbsp; &lt;a&gt; &nbsp;{}</i></span><br> Targets any <i>&lt;a&gt;</i> elements that nest inside a <i>&lt;p&gt;</i> element, even<br> if there are other elements nested between them.</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		<section>
+			<h2>Specificity</h2>
+		</section>
+		
+			<table id="table-2">
+				<thead>
+					<tr>
+						<th>Selector</th>
+						<th colspan="4">More Specific Than:</th>
+					</tr>
+				</thead>
+				<tbody>	
+					<tr>
+						<td>ID</td>
+						<td><i>Class</i></td>
+					</tr>
+					
+					<tr>
+						<td><i>Class</i></td>
+						<td><i>Type</i></td>
+					</tr>
+				
+					<tr>
+						<td>Type</td>
+						<td>Universal</td>
+					</tr>
+				
+					<tr>
+						<td>Child</td>
+						<td>Desendent</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<div class="footnote">
+			<sup>1&mdash; JON DUCKETT&nbsp; |&nbsp; HTML & CSS design & build websites &copy; 2011 Copyright. All Rights Reserved.&nbsp; |&nbsp; page 238 </sup>
+		</div>
+	</main>
+		
+	<footer>
+		<div>
+			&copy; 2022 - Baerlucky
+		</div>
+	</footer>
+</body>
+</html>
